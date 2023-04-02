@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ananya" />
+    <meta
+      name="description"
+      content="Responsive todos app made using JavaScript"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/icons8-todo-list-100.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="filter"></div>
+    <div id="logoContainer">
+      <img src="./img/20230402_205404_0000.png" alt="logo" class="logo" />
+    </div>
+    <div class="social">
+      <a
+        href="https://github.com/anne-ananya/todos-application"
+        target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/ananya-de-5552a4205" target="_blank"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a href="https://www.instagram.com/a.nanya_de/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+    <div class="alert-left">
+      <div class="alert"></div>
+    </div>
+    <div class="alert-right">
+      <div class="alert"></div>
+    </div>
+    <div class="box">
+      <i class="fa-solid fa-xmark"></i>
+      <h2 class="title">Edit</h2>
+      <input type="text" class="editItem" />
+      <input type="submit" class="editSubmit" value="Save" />
+    </div>
+    <div id="leftSide">
+      <header>
+        <h1 class="title">Tasks Left</h1>
+        <div class="add-container">
+          <form class="input-container">
+            <input type="text" class="todo-input" placeholder="Add an item" />
+            <select name="priority" class="priority">
+              <option selected disabled>Priority</option>
+              <option value="high">High</option>
+              <option value="middle">Middle</option>
+              <option value="low">Low</option>
+            </select>
+            <input type="submit" class="submitBtn" value="Add" />
+          </form>
+        </div>
+      </header>
+
+      <div class="list">
+      </div>
+      <div class="total">Today's List: 0</div>
+    </div>
+    <div id="rightSide">
+      <header>
+        <h1 class="title">Completed</h1>
+      </header>
+      <div class="list">
+      </div>
+      <div class="total">Completed tasks: 0</div>
+    </div>
+    <footer id="copyright">
+      created <span class="heart"> </span> by
+      <a href="https://github.com/anne-ananya"><b>Ananya</b></a>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
